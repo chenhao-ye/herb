@@ -23,4 +23,10 @@ Thyme is a theme for zsh. It is based on [bira](https://github.com/ohmyzsh/ohmyz
 
 ```bash
 cp thyme/thyme.zsh-theme $ZSH_CUSTOM/themes/
+echo 'ZSH_THEME="thyme"' >> $HOME/.zshrc
 ```
+
+Thyme support two options set via variables:
+
+- if `THYME_USER_AS` is set, zsh will print `${THYME_USER_AS}` instead of user name.
+- if `THYME_NO_HOST` is set to "true", zsh will hide host name. This can be useful on a personal computer, as the user usually know the host name very well and printing it can be redundant.
