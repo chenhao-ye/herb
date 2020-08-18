@@ -23,7 +23,7 @@ Thyme is a theme for zsh. It is based on [bira](https://github.com/ohmyzsh/ohmyz
 
 ```bash
 cp thyme/thyme.zsh-theme $ZSH_CUSTOM/themes/
-echo 'ZSH_THEME="thyme"' >> $HOME/.zshrc
+# then set ZSH_THEME to "thyme" in .zshrc
 ```
 
 Thyme support two options set via variables:
