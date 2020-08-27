@@ -27,7 +27,7 @@ Thyme is a theme for zsh. It is based on [bira](https://github.com/ohmyzsh/ohmyz
 
 ![thyme-screenshot](img/thyme-screenshot.png)
 
-Before install, make sure [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) is installed.
+Before installment, make sure [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) has been installed.
 
 ```bash
 cp thyme/thyme.zsh-theme $ZSH_CUSTOM/themes/
