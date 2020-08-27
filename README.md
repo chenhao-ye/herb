@@ -1,6 +1,6 @@
-# Seasoning
+# Herb
 
-A personal collection of themes. Themes work just like seasonings: they wouldn't solve any practical problem, but they could make coding more enjoyable.
+A personal collection of themes. Themes work just like herbs: they wouldn't solve any practical problem, but they could make coding more enjoyable.
 
 ## Rosemary
 
