@@ -32,7 +32,7 @@ fi
 
 # Check if we are on SSH or not
 if [[ -n "$SSH_CLIENT"  ||  -n "$SSH2_CLIENT" ]]; then
-	_HOST="%F{red}${_HOST}%f" # SSH
+	_HOST="%F{cyan}${_HOST}%f" # SSH
 else
 	_HOST="%F{green}${_HOST}%f" # no SSH
 fi
