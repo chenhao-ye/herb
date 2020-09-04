@@ -121,10 +121,16 @@ function displaytime {
 }
 
 preexec() {
+	if [[ "$THYME_TIMER_DISABLED" == "true" ]]; then
+		return
+	fi
 	THYME_TIMESTAMP=$(date +%s)
 }
 
 precmd() {
+	if [[ "$THYME_TIMER_DISABLED" == "true" ]]; then
+		return
+	fi
 	local _DURATION=""
 	if [[ -n "$THYME_TIMESTAMP" ]]; then
 		_DURATION=$(( $(date +%s) - $THYME_TIMESTAMP ))

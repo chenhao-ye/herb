@@ -19,6 +19,7 @@ Thyme supports two options set via variables:
 
 - if `THYME_USER_AS` is set, zsh will show `${THYME_USER_AS}` as user name.
 - if `THYME_NO_HOST` is set to "true", zsh will hide host name. This can be useful on a personal computer, as the user usually know the host name very well and printing it can be redundant.
+- if `THYME_TIMER_DISABLED` is set to "true", zsh will disable all timer (will not display current time and process exection time). This can have some performance benefits, but usually not a lot.
 
 To install for zsh:
 
