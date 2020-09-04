@@ -106,6 +106,10 @@ local _JOB="%(1j.%F{cyan}[⚙]%f.)"
 PROMPT="${_NEWLINE}╭─[${_USER}${_HOST}]${_JOB}${_CWD}${_GIT_PROMPT}
 ╰─$_PROMPT "
 
+if [[ "$THYME_TIMER_DISABLED" == "true" ]]; then
+	RPROMPT="${_RET}"
+	return
+fi
 
 # Based on http://stackoverflow.com/a/32164707/3859566
 function displaytime {
@@ -121,16 +125,10 @@ function displaytime {
 }
 
 preexec() {
-	if [[ "$THYME_TIMER_DISABLED" == "true" ]]; then
-		return
-	fi
 	THYME_TIMESTAMP=$(date +%s)
 }
 
 precmd() {
-	if [[ "$THYME_TIMER_DISABLED" == "true" ]]; then
-		return
-	fi
 	local _DURATION=""
 	if [[ -n "$THYME_TIMESTAMP" ]]; then
 		_DURATION=$(( $(date +%s) - $THYME_TIMESTAMP ))
